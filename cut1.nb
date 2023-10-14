@@ -1,0 +1,2360 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[    101587,       2352]
+NotebookOptionsPosition[     99289,       2303]
+NotebookOutlinePosition[     99740,       2321]
+CellTagsIndexPosition[     99697,       2318]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"aaaa", "=", 
+  RowBox[{
+   RowBox[{"ResourceFunction", "[", "\"\<SetPartitions\>\"", "]"}], "[", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"Atree", "[", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"k", "[", "1", "]"}], ",", 
+        RowBox[{"in", "[", "12", "]"}], ",", 
+        RowBox[{"in", "[", "8", "]"}]}], "}"}], "]"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Atree", "[", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"k", "[", "2", "]"}], ",", 
+        RowBox[{"in", "[", "5", "]"}], ",", 
+        RowBox[{"-", 
+         RowBox[{"in", "[", "12", "]"}]}]}], "}"}], "]"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Atree", "[", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"-", 
+         RowBox[{"in", "[", "5", "]"}]}], ",", 
+        RowBox[{"in", "[", "6", "]"}], ",", 
+        RowBox[{"in", "[", "9", "]"}]}], "}"}], "]"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Atree", "[", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"-", 
+         RowBox[{"in", "[", "6", "]"}]}], ",", 
+        RowBox[{"in", "[", "7", "]"}], ",", 
+        RowBox[{"in", "[", "10", "]"}]}], "}"}], "]"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Atree", "[", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"-", 
+         RowBox[{"in", "[", "10", "]"}]}], ",", 
+        RowBox[{"in", "[", "14", "]"}], ",", 
+        RowBox[{"in", "[", "11", "]"}]}], "}"}], "]"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Atree", "[", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"-", 
+         RowBox[{"in", "[", "11", "]"}]}], ",", 
+        RowBox[{"-", 
+         RowBox[{"in", "[", "8", "]"}]}], ",", 
+        RowBox[{"-", 
+         RowBox[{"in", "[", "9", "]"}]}]}], "}"}], "]"}], ",", 
+     "\[IndentingNewLine]", " ", 
+     RowBox[{"Atree", "[", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"-", 
+         RowBox[{"in", "[", "7", "]"}]}], ",", 
+        RowBox[{"in", "[", "13", "]"}], ",", 
+        RowBox[{"k", "[", "3", "]"}]}], "}"}], "]"}], ",", 
+     "\[IndentingNewLine]", " ", 
+     RowBox[{"Atree", "[", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"-", 
+         RowBox[{"in", "[", "14", "]"}]}], ",", 
+        RowBox[{"-", 
+         RowBox[{"in", "[", "13", "]"}]}], ",", 
+        RowBox[{"k", "[", "4", "]"}]}], "}"}], "]"}]}], "}"}], 
+   "]"}]}]], "Input",
+ CellLabel->
+  "In[321]:=",ExpressionUUID->"43c2eb85-ef9d-415b-a8a1-0369557fa97d"],
+
+Cell[BoxData[
+ TemplateBox[<|"shortenedBoxes" -> TagBox[
+     RowBox[{"{", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"{", 
+             RowBox[{
+               TagBox[
+                RowBox[{
+                  SuperscriptBox[
+                   SubscriptBox["A", "3"], "tree"], "(", 
+                  SubscriptBox["k", "1"], ",", 
+                  RowBox[{"in", "[", "12", "]"}], ",", 
+                  RowBox[{"in", "[", "8", "]"}], ")"}], DisplayForm], ",", 
+               TagBox[
+                RowBox[{
+                  SuperscriptBox[
+                   SubscriptBox["A", "3"], "tree"], "(", 
+                  SubscriptBox["k", "2"], ",", 
+                  RowBox[{"in", "[", "5", "]"}], ",", 
+                  RowBox[{"-", 
+                    RowBox[{"in", "[", "12", "]"}]}], ")"}], DisplayForm], 
+               ",", 
+               TagBox[
+                RowBox[{
+                  SuperscriptBox[
+                   SubscriptBox["A", "3"], "tree"], "(", 
+                  RowBox[{"-", 
+                    RowBox[{"in", "[", "5", "]"}]}], ",", 
+                  RowBox[{"in", "[", "6", "]"}], ",", 
+                  RowBox[{"in", "[", "9", "]"}], ")"}], DisplayForm], ",", 
+               TagBox[
+                RowBox[{
+                  SuperscriptBox[
+                   SubscriptBox["A", "3"], "tree"], "(", 
+                  RowBox[{"-", 
+                    RowBox[{"in", "[", "6", "]"}]}], ",", 
+                  RowBox[{"in", "[", "7", "]"}], ",", 
+                  RowBox[{"in", "[", "10", "]"}], ")"}], DisplayForm], ",", 
+               TagBox[
+                TemplateBox[{"1"}, "OutputSizeLimit`Skeleton"], DisplayForm], 
+               ",", 
+               TagBox[
+                RowBox[{
+                  SuperscriptBox[
+                   SubscriptBox["A", "3"], "tree"], "(", 
+                  RowBox[{"-", 
+                    RowBox[{"in", "[", "11", "]"}]}], ",", 
+                  RowBox[{"-", 
+                    RowBox[{"in", "[", "8", "]"}]}], ",", 
+                  RowBox[{"-", 
+                    RowBox[{"in", "[", "9", "]"}]}], ")"}], DisplayForm], ",", 
+               TagBox[
+                RowBox[{
+                  SuperscriptBox[
+                   SubscriptBox["A", "3"], "tree"], "(", 
+                  RowBox[{"-", 
+                    RowBox[{"in", "[", "7", "]"}]}], ",", 
+                  RowBox[{"in", "[", "13", "]"}], ",", 
+                  SubscriptBox["k", "3"], ")"}], DisplayForm], ",", 
+               TagBox[
+                RowBox[{
+                  SuperscriptBox[
+                   SubscriptBox["A", "3"], "tree"], "(", 
+                  RowBox[{"-", 
+                    RowBox[{"in", "[", "14", "]"}]}], ",", 
+                  RowBox[{"-", 
+                    RowBox[{"in", "[", "13", "]"}]}], ",", 
+                  SubscriptBox["k", "4"], ")"}], DisplayForm]}], "}"}], "}"}],
+          ",", 
+         TemplateBox[{"4138"}, "OutputSizeLimit`Skeleton"], ",", 
+         RowBox[{"{", 
+           TemplateBox[{"1"}, "OutputSizeLimit`Skeleton"], "}"}]}], "}"}], 
+     Short[#, 5]& ], "line" -> 321, "sessionID" -> 30057913830722514571, 
+   "byteCount" -> 14330992, "size" -> 5, "stored" -> False, "expr" -> 
+   Missing["NotStored"], "wrap" -> OutputSizeLimit`Defer, "version" -> 1|>,
+  "OutputSizeLimitTemplate"]], "Output",
+ CellChangeTimes->{3.9062749786157975`*^9},
+ CellLabel->
+  "Out[321]=",ExpressionUUID->"5bf1d7f4-e15c-45a8-adb6-49eb2b198308"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{"aaaa", "[", 
+     RowBox[{"[", "1", "]"}], "]"}], "[", 
+    RowBox[{"[", "1", "]"}], "]"}], "//", "toGraph"}], "//", " ", 
+  RowBox[{
+   RowBox[{"doOrderedPlot", "[", 
+    RowBox[{"#", ",", 
+     RowBox[{"k", "/@", 
+      RowBox[{"Range", "[", "4", "]"}]}]}], "]"}], "&"}]}]], "Input",
+ CellChangeTimes->{{3.9062749910797944`*^9, 3.906275005126135*^9}},
+ CellLabel->
+  "In[322]:=",ExpressionUUID->"cc8e6b66-18b7-4560-ab24-9455611c3e6b"],
+
+Cell[BoxData[
+ GraphicsBox[{
+   {Hue[0.6, 0.7, 0.5], Opacity[0.7], {
+     {RGBColor[0, 0, 1], 
+      {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+        Rational[1, 18]], 
+       ArrowBox[{{0.6245380216637644, -0.24576309369944221`}, {
+        0.7071067811865475, -0.7071067811865475}}]}}, InsetBox[
+      FormBox[
+       SubscriptBox["k", "4"],
+       TraditionalForm], {0.6658224014251559, -0.4764349374429948}, 
+      ImageScaled[{0.5, 0.5}],
+      BaseStyle->"Graphics"]}, {
+     {RGBColor[0, 0, 1], 
+      {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+        Rational[1, 18]], 
+       ArrowBox[{{0.6244926994581556, 0.2458909568443634}, {
+        0.6245380216637644, -0.24576309369944221`}}]}}, InsetBox[
+      RowBox[{"in", "(", "13", ")"}], {0.6245153605609599, 0.000063931572460596},
+       ImageScaled[{0.5, 0.5}],
+      BaseStyle->"Graphics"]}, {
+     {RGBColor[0, 0, 1], 
+      {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+        Rational[1, 18]], 
+       ArrowBox[{{0.6244926994581556, 0.2458909568443634}, {
+        0.7071067811865475, 0.7071067811865475}}]}}, InsetBox[
+      FormBox[
+       SubscriptBox["k", "3"],
+       TraditionalForm], {0.6657997403223515, 0.47649886901545546}, 
+      ImageScaled[{0.5, 0.5}],
+      BaseStyle->"Graphics"]}, {
+     {RGBColor[0, 0, 1], 
+      {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+        Rational[1, 18]], 
+       ArrowBox[{{-0.6248136450773634, 
+        0.24585789803829922`}, {-0.7071067811865475, 0.7071067811865475}}]}}, 
+     InsetBox[
+      FormBox[
+       SubscriptBox["k", "2"],
+       TraditionalForm], {-0.6659602131319554, 0.47648233961242337}, 
+      ImageScaled[{0.5, 0.5}],
+      BaseStyle->"Graphics"]}, {
+     {RGBColor[0, 0, 1], 
+      {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+        Rational[1, 18]], 
+       ArrowBox[{{-0.6248136450773634, 
+        0.24585789803829922`}, {-0.22311665094694183`, 
+        0.1684297293716036}}]}}, InsetBox[
+      RowBox[{"in", "(", "5", ")"}], {-0.42396514801215257, 0.2071438137049514},
+       ImageScaled[{0.5, 0.5}],
+      BaseStyle->"Graphics"]}, {
+     {RGBColor[0, 0, 1], 
+      {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+        Rational[1, 18]], 
+       ArrowBox[{{-0.6242949070937508, -0.24590391465015868`}, \
+{-0.6248136450773634, 0.24585789803829922`}}]}}, InsetBox[
+      RowBox[{"in", "(", "12", ")"}], {-0.6245542760855571, -0.00002300830592973091},
+       ImageScaled[{0.5, 0.5}],
+      BaseStyle->"Graphics"]}, {
+     {RGBColor[0, 0, 1], 
+      {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+        Rational[1, 18]], 
+       ArrowBox[{{-0.6242949070937508, -0.24590391465015868`}, \
+{-0.7071067811865475, -0.7071067811865475}}]}}, InsetBox[
+      FormBox[
+       SubscriptBox["k", "1"],
+       TraditionalForm], {-0.6657008441401491, -0.4765053479183531}, 
+      ImageScaled[{0.5, 0.5}],
+      BaseStyle->"Graphics"]}, {
+     {RGBColor[0, 0, 1], 
+      {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+        Rational[1, 18]], 
+       ArrowBox[{{-0.6242949070937508, -0.24590391465015868`}, \
+{-0.22300593933376614`, -0.16794957966027957`}}]}}, InsetBox[
+      RowBox[{"in", "(", "8", ")"}], {-0.42365042321375845, -0.20692674715521914},
+       ImageScaled[{0.5, 0.5}],
+      BaseStyle->"Graphics"]}, {
+     {RGBColor[0, 0, 1], 
+      {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+        Rational[1, 18]], 
+       ArrowBox[{{0.2230006431996123, -0.1676626736062281}, {
+        0.6245380216637644, -0.24576309369944221`}}]}}, InsetBox[
+      RowBox[{"in", "(", "14", ")"}], {0.42376933243168835, -0.20671288365283516},
+       ImageScaled[{0.5, 0.5}],
+      BaseStyle->"Graphics"]}, {
+     {RGBColor[0, 0, 1], 
+      {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+        Rational[1, 18]], 
+       ArrowBox[{{
+        0.2230006431996123, -0.1676626736062281}, {-0.22300593933376614`, \
+-0.16794957966027957`}}]}}, InsetBox[
+      RowBox[{"in", "(", "11", ")"}], {-2.6480670769213344*^-6, -0.16780612663325384},
+       ImageScaled[{0.5, 0.5}],
+      BaseStyle->"Graphics"]}, {
+     {RGBColor[0, 0, 1], 
+      {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+        Rational[1, 18]], 
+       ArrowBox[{{0.22267547907287472`, 0.16848470017113984`}, {
+        0.6244926994581556, 0.2458909568443634}}]}}, InsetBox[
+      RowBox[{"in", "(", "7", ")"}], {0.42358408926551516, 0.20718782850775164},
+       ImageScaled[{0.5, 0.5}],
+      BaseStyle->"Graphics"]}, {
+     {RGBColor[0, 0, 1], 
+      {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+        Rational[1, 18]], 
+       ArrowBox[{{0.22267547907287472`, 0.16848470017113984`}, {
+        0.2230006431996123, -0.1676626736062281}}]}}, InsetBox[
+      RowBox[{"in", "(", "10", ")"}], {0.2228380611362435, 0.000411013282455866},
+       ImageScaled[{0.5, 0.5}],
+      BaseStyle->"Graphics"]}, {
+     {RGBColor[0, 0, 1], 
+      {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+        Rational[1, 18]], 
+       ArrowBox[{{-0.22311665094694183`, 
+        0.1684297293716036}, {-0.22300593933376614`, \
+-0.16794957966027957`}}]}}, InsetBox[
+      RowBox[{"in", "(", "9", ")"}], {-0.223061295140354, 0.00024007485566202025},
+       ImageScaled[{0.5, 0.5}],
+      BaseStyle->"Graphics"]}, {
+     {RGBColor[0, 0, 1], 
+      {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+        Rational[1, 18]], 
+       ArrowBox[{{-0.22311665094694183`, 0.1684297293716036}, {
+        0.22267547907287472`, 0.16848470017113984`}}]}}, InsetBox[
+      RowBox[{"in", "(", "6", ")"}], {-0.00022058593703355722, 0.1684572147713717},
+       ImageScaled[{0.5, 0.5}],
+      BaseStyle->"Graphics"]}}, 
+   {Hue[0.6, 0.2, 0.8], EdgeForm[{GrayLevel[0], Opacity[0.7]}], 
+    DiskBox[{0.6245380216637644, -0.24576309369944221}, 0.017674226532102905],
+     DiskBox[{0.7071067811865475, -0.7071067811865475}, 0.017674226532102905],
+     DiskBox[{0.6244926994581556, 0.2458909568443634}, 0.017674226532102905], 
+    DiskBox[{0.7071067811865475, 0.7071067811865475}, 0.017674226532102905], 
+    DiskBox[{-0.6248136450773634, 0.24585789803829922}, 0.017674226532102905],
+     DiskBox[{-0.7071067811865475, 0.7071067811865475}, 0.017674226532102905],
+     DiskBox[{-0.6242949070937508, -0.24590391465015868}, 
+     0.017674226532102905], 
+    DiskBox[{-0.7071067811865475, -0.7071067811865475}, 0.017674226532102905],
+     DiskBox[{0.2230006431996123, -0.1676626736062281}, 0.017674226532102905],
+     DiskBox[{-0.22300593933376614, -0.16794957966027957}, 
+     0.017674226532102905], 
+    DiskBox[{0.22267547907287472, 0.16848470017113984}, 0.017674226532102905],
+     DiskBox[{-0.22311665094694183, 0.1684297293716036}, 
+     0.017674226532102905]}},
+  FormatType->TraditionalForm,
+  FrameTicks->None]], "Output",
+ CellChangeTimes->{3.906275007217034*^9},
+ CellLabel->
+  "Out[322]=",ExpressionUUID->"27b2eef6-af24-44cd-a2ce-67ec92e98f59"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"sewGraphs", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"aaaa", "[", 
+         RowBox[{"[", "2", "]"}], "]"}], "[", 
+        RowBox[{"[", "1", "]"}], "]"}], "//", "treesToLoops"}], ")"}], "[", 
+     RowBox[{"[", "1", "]"}], "]"}], ",", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"aaaa", "[", 
+         RowBox[{"[", "2", "]"}], "]"}], "[", 
+        RowBox[{"[", "2", "]"}], "]"}], "//", "treesToLoops"}], ")"}], "[", 
+     RowBox[{"[", "1", "]"}], "]"}]}], "]"}], "//", 
+  RowBox[{
+   RowBox[{"doOrderedPlot", "[", 
+    RowBox[{"#", ",", 
+     RowBox[{"k", "/@", 
+      RowBox[{"Range", "[", "4", "]"}]}]}], "]"}], "&"}]}]], "Input",
+ CellChangeTimes->{{3.9062750209455733`*^9, 3.9062750378775682`*^9}},
+ CellLabel->
+  "In[324]:=",ExpressionUUID->"c20239a1-5568-4df9-a582-f4853108279c"],
+
+Cell[BoxData[
+ GraphicsBox[{
+   {Hue[0.6, 0.7, 0.5], Opacity[0.7], {
+     {RGBColor[0, 0, 1], 
+      {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+        Rational[1, 18]], 
+       ArrowBox[{{0.6245380216637644, -0.24576309369944221`}, {
+        0.7071067811865475, -0.7071067811865475}}]}}, InsetBox[
+      FormBox[
+       SubscriptBox["k", "4"],
+       TraditionalForm], {0.6658224014251559, -0.4764349374429948}, 
+      ImageScaled[{0.5, 0.5}],
+      BaseStyle->"Graphics"]}, {
+     {RGBColor[0, 0, 1], 
+      {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+        Rational[1, 18]], 
+       ArrowBox[{{0.6244926994581556, 0.2458909568443634}, {
+        0.6245380216637644, -0.24576309369944221`}}]}}, InsetBox[
+      RowBox[{"in", "(", "13", ")"}], {0.6245153605609599, 0.000063931572460596},
+       ImageScaled[{0.5, 0.5}],
+      BaseStyle->"Graphics"]}, {
+     {RGBColor[0, 0, 1], 
+      {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+        Rational[1, 18]], 
+       ArrowBox[{{0.6244926994581556, 0.2458909568443634}, {
+        0.7071067811865475, 0.7071067811865475}}]}}, InsetBox[
+      FormBox[
+       SubscriptBox["k", "3"],
+       TraditionalForm], {0.6657997403223515, 0.47649886901545546}, 
+      ImageScaled[{0.5, 0.5}],
+      BaseStyle->"Graphics"]}, {
+     {RGBColor[0, 0, 1], 
+      {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+        Rational[1, 18]], 
+       ArrowBox[{{-0.6248136450773634, 
+        0.24585789803829922`}, {-0.7071067811865475, 0.7071067811865475}}]}}, 
+     InsetBox[
+      FormBox[
+       SubscriptBox["k", "2"],
+       TraditionalForm], {-0.6659602131319554, 0.47648233961242337}, 
+      ImageScaled[{0.5, 0.5}],
+      BaseStyle->"Graphics"]}, {
+     {RGBColor[0, 0, 1], 
+      {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+        Rational[1, 18]], 
+       ArrowBox[{{-0.6248136450773634, 
+        0.24585789803829922`}, {-0.22311665094694183`, 
+        0.1684297293716036}}]}}, InsetBox[
+      RowBox[{"in", "(", "5", ")"}], {-0.42396514801215257, 0.2071438137049514},
+       ImageScaled[{0.5, 0.5}],
+      BaseStyle->"Graphics"]}, {
+     {RGBColor[0, 0, 1], 
+      {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+        Rational[1, 18]], 
+       ArrowBox[{{-0.6242949070937508, -0.24590391465015868`}, \
+{-0.6248136450773634, 0.24585789803829922`}}]}}, InsetBox[
+      RowBox[{"in", "(", "12", ")"}], {-0.6245542760855571, -0.00002300830592973091},
+       ImageScaled[{0.5, 0.5}],
+      BaseStyle->"Graphics"]}, {
+     {RGBColor[0, 0, 1], 
+      {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+        Rational[1, 18]], 
+       ArrowBox[{{-0.6242949070937508, -0.24590391465015868`}, \
+{-0.7071067811865475, -0.7071067811865475}}]}}, InsetBox[
+      FormBox[
+       SubscriptBox["k", "1"],
+       TraditionalForm], {-0.6657008441401491, -0.4765053479183531}, 
+      ImageScaled[{0.5, 0.5}],
+      BaseStyle->"Graphics"]}, {
+     {RGBColor[0, 0, 1], 
+      {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+        Rational[1, 18]], 
+       ArrowBox[{{-0.6242949070937508, -0.24590391465015868`}, \
+{-0.22300593933376614`, -0.16794957966027957`}}]}}, InsetBox[
+      RowBox[{"in", "(", "8", ")"}], {-0.42365042321375845, -0.20692674715521914},
+       ImageScaled[{0.5, 0.5}],
+      BaseStyle->"Graphics"]}, {
+     {RGBColor[0, 0, 1], 
+      {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+        Rational[1, 18]], 
+       ArrowBox[{{0.2230006431996123, -0.1676626736062281}, {
+        0.6245380216637644, -0.24576309369944221`}}]}}, InsetBox[
+      RowBox[{"in", "(", "14", ")"}], {0.42376933243168835, -0.20671288365283516},
+       ImageScaled[{0.5, 0.5}],
+      BaseStyle->"Graphics"]}, {
+     {RGBColor[0, 0, 1], 
+      {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+        Rational[1, 18]], 
+       ArrowBox[{{
+        0.2230006431996123, -0.1676626736062281}, {-0.22300593933376614`, \
+-0.16794957966027957`}}]}}, InsetBox[
+      RowBox[{"in", "(", "11", ")"}], {-2.6480670769213344*^-6, -0.16780612663325384},
+       ImageScaled[{0.5, 0.5}],
+      BaseStyle->"Graphics"]}, {
+     {RGBColor[0, 0, 1], 
+      {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+        Rational[1, 18]], 
+       ArrowBox[{{0.22267547907287472`, 0.16848470017113984`}, {
+        0.6244926994581556, 0.2458909568443634}}]}}, InsetBox[
+      RowBox[{"in", "(", "7", ")"}], {0.42358408926551516, 0.20718782850775164},
+       ImageScaled[{0.5, 0.5}],
+      BaseStyle->"Graphics"]}, {
+     {RGBColor[0, 0, 1], 
+      {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+        Rational[1, 18]], 
+       ArrowBox[{{0.22267547907287472`, 0.16848470017113984`}, {
+        0.2230006431996123, -0.1676626736062281}}]}}, InsetBox[
+      RowBox[{"in", "(", "10", ")"}], {0.2228380611362435, 0.000411013282455866},
+       ImageScaled[{0.5, 0.5}],
+      BaseStyle->"Graphics"]}, {
+     {RGBColor[0, 0, 1], 
+      {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+        Rational[1, 18]], 
+       ArrowBox[{{-0.22311665094694183`, 
+        0.1684297293716036}, {-0.22300593933376614`, \
+-0.16794957966027957`}}]}}, InsetBox[
+      RowBox[{"in", "(", "9", ")"}], {-0.223061295140354, 0.00024007485566202025},
+       ImageScaled[{0.5, 0.5}],
+      BaseStyle->"Graphics"]}, {
+     {RGBColor[0, 0, 1], 
+      {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+        Rational[1, 18]], 
+       ArrowBox[{{-0.22311665094694183`, 0.1684297293716036}, {
+        0.22267547907287472`, 0.16848470017113984`}}]}}, InsetBox[
+      RowBox[{"in", "(", "6", ")"}], {-0.00022058593703355722, 0.1684572147713717},
+       ImageScaled[{0.5, 0.5}],
+      BaseStyle->"Graphics"]}}, 
+   {Hue[0.6, 0.2, 0.8], EdgeForm[{GrayLevel[0], Opacity[0.7]}], 
+    DiskBox[{0.6245380216637644, -0.24576309369944221}, 0.017674226532102905],
+     DiskBox[{0.7071067811865475, -0.7071067811865475}, 0.017674226532102905],
+     DiskBox[{0.6244926994581556, 0.2458909568443634}, 0.017674226532102905], 
+    DiskBox[{0.7071067811865475, 0.7071067811865475}, 0.017674226532102905], 
+    DiskBox[{-0.6248136450773634, 0.24585789803829922}, 0.017674226532102905],
+     DiskBox[{-0.7071067811865475, 0.7071067811865475}, 0.017674226532102905],
+     DiskBox[{-0.6242949070937508, -0.24590391465015868}, 
+     0.017674226532102905], 
+    DiskBox[{-0.7071067811865475, -0.7071067811865475}, 0.017674226532102905],
+     DiskBox[{0.2230006431996123, -0.1676626736062281}, 0.017674226532102905],
+     DiskBox[{-0.22300593933376614, -0.16794957966027957}, 
+     0.017674226532102905], 
+    DiskBox[{0.22267547907287472, 0.16848470017113984}, 0.017674226532102905],
+     DiskBox[{-0.22311665094694183, 0.1684297293716036}, 
+     0.017674226532102905]}},
+  FormatType->TraditionalForm,
+  FrameTicks->None]], "Output",
+ CellChangeTimes->{{3.906275033977648*^9, 3.9062750395357494`*^9}},
+ CellLabel->
+  "Out[324]=",ExpressionUUID->"d465a4c6-384c-4747-beef-6441127b02bd"]
+}, Open  ]],
+
+Cell["Cut function changes a cut legs to l:", "Text",
+ CellChangeTimes->{{3.9062750682223606`*^9, 3.9062751057108526`*^9}, {
+  3.9062751386527386`*^9, 
+  3.9062751463181744`*^9}},ExpressionUUID->"07fd0d3a-2ab9-410c-9f4b-\
+4c03966bb69c"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Cut", "[", 
+  RowBox[{
+   RowBox[{"aaaa", "[", 
+    RowBox[{"[", "2", "]"}], "]"}], ",", 
+   RowBox[{"in", "[", "5", "]"}]}], "]"}]], "Input",
+ CellLabel->
+  "In[325]:=",ExpressionUUID->"c85c2db3-4774-4384-bb47-592b78dcab57"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    TagBox[
+     RowBox[{
+      SuperscriptBox[
+       SubscriptBox["A", "3"], "tree"], "(", 
+      SubscriptBox["k", "1"], ",", 
+      RowBox[{"in", "[", "12", "]"}], ",", 
+      RowBox[{"in", "[", "8", "]"}], ")"}],
+     DisplayForm], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     TagBox[
+      RowBox[{
+       SuperscriptBox[
+        SubscriptBox["A", "3"], "tree"], "(", 
+       SubscriptBox["k", "2"], ",", 
+       SubscriptBox["l", "1"], ",", 
+       RowBox[{"-", 
+        RowBox[{"in", "[", "12", "]"}]}], ")"}],
+      DisplayForm], ",", 
+     TagBox[
+      RowBox[{
+       SuperscriptBox[
+        SubscriptBox["A", "3"], "tree"], "(", 
+       RowBox[{"-", 
+        SubscriptBox["l", "1"]}], ",", 
+       RowBox[{"in", "[", "6", "]"}], ",", 
+       RowBox[{"in", "[", "9", "]"}], ")"}],
+      DisplayForm], ",", 
+     TagBox[
+      RowBox[{
+       SuperscriptBox[
+        SubscriptBox["A", "3"], "tree"], "(", 
+       RowBox[{"-", 
+        RowBox[{"in", "[", "6", "]"}]}], ",", 
+       RowBox[{"in", "[", "7", "]"}], ",", 
+       RowBox[{"in", "[", "10", "]"}], ")"}],
+      DisplayForm], ",", 
+     TagBox[
+      RowBox[{
+       SuperscriptBox[
+        SubscriptBox["A", "3"], "tree"], "(", 
+       RowBox[{"-", 
+        RowBox[{"in", "[", "10", "]"}]}], ",", 
+       RowBox[{"in", "[", "14", "]"}], ",", 
+       RowBox[{"in", "[", "11", "]"}], ")"}],
+      DisplayForm], ",", 
+     TagBox[
+      RowBox[{
+       SuperscriptBox[
+        SubscriptBox["A", "3"], "tree"], "(", 
+       RowBox[{"-", 
+        RowBox[{"in", "[", "11", "]"}]}], ",", 
+       RowBox[{"-", 
+        RowBox[{"in", "[", "8", "]"}]}], ",", 
+       RowBox[{"-", 
+        RowBox[{"in", "[", "9", "]"}]}], ")"}],
+      DisplayForm], ",", 
+     TagBox[
+      RowBox[{
+       SuperscriptBox[
+        SubscriptBox["A", "3"], "tree"], "(", 
+       RowBox[{"-", 
+        RowBox[{"in", "[", "7", "]"}]}], ",", 
+       RowBox[{"in", "[", "13", "]"}], ",", 
+       SubscriptBox["k", "3"], ")"}],
+      DisplayForm], ",", 
+     TagBox[
+      RowBox[{
+       SuperscriptBox[
+        SubscriptBox["A", "3"], "tree"], "(", 
+       RowBox[{"-", 
+        RowBox[{"in", "[", "14", "]"}]}], ",", 
+       RowBox[{"-", 
+        RowBox[{"in", "[", "13", "]"}]}], ",", 
+       SubscriptBox["k", "4"], ")"}],
+      DisplayForm]}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.906275113413809*^9},
+ CellLabel->
+  "Out[325]=",ExpressionUUID->"18b2ff7d-e510-4585-8145-0875983f0794"]
+}, Open  ]],
+
+Cell["Cut1 function changes all legs into l:", "Text",
+ CellChangeTimes->{{3.9062751636509156`*^9, 
+  3.9062751768911552`*^9}},ExpressionUUID->"ef4b90e3-8c58-43b2-a3e5-\
+01ad3c03805c"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Cut1", "[", 
+  RowBox[{"aaaa", "[", 
+   RowBox[{"[", "2", "]"}], "]"}], "]"}]], "Input",
+ CellLabel->
+  "In[326]:=",ExpressionUUID->"a45f06cd-7be0-4722-84b0-eaefc4f8ce60"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    TagBox[
+     RowBox[{
+      SuperscriptBox[
+       SubscriptBox["A", "3"], "tree"], "(", 
+      SubscriptBox["k", "1"], ",", 
+      SubscriptBox["l", "1"], ",", 
+      SubscriptBox["l", "1"], ")"}],
+     DisplayForm], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     TagBox[
+      RowBox[{
+       SuperscriptBox[
+        SubscriptBox["A", "3"], "tree"], "(", 
+       SubscriptBox["k", "2"], ",", 
+       SubscriptBox["l", "1"], ",", 
+       RowBox[{"-", 
+        SubscriptBox["l", "1"]}], ")"}],
+      DisplayForm], ",", 
+     TagBox[
+      RowBox[{
+       SuperscriptBox[
+        SubscriptBox["A", "3"], "tree"], "(", 
+       RowBox[{"-", 
+        SubscriptBox["l", "1"]}], ",", 
+       SubscriptBox["l", "1"], ",", 
+       SubscriptBox["l", "1"], ")"}],
+      DisplayForm], ",", 
+     TagBox[
+      RowBox[{
+       SuperscriptBox[
+        SubscriptBox["A", "3"], "tree"], "(", 
+       RowBox[{"-", 
+        SubscriptBox["l", "1"]}], ",", 
+       SubscriptBox["l", "1"], ",", 
+       SubscriptBox["l", "1"], ")"}],
+      DisplayForm], ",", 
+     TagBox[
+      RowBox[{
+       SuperscriptBox[
+        SubscriptBox["A", "3"], "tree"], "(", 
+       RowBox[{"-", 
+        SubscriptBox["l", "1"]}], ",", 
+       SubscriptBox["l", "1"], ",", 
+       SubscriptBox["l", "1"], ")"}],
+      DisplayForm], ",", 
+     TagBox[
+      RowBox[{
+       SuperscriptBox[
+        SubscriptBox["A", "3"], "tree"], "(", 
+       RowBox[{"-", 
+        SubscriptBox["l", "1"]}], ",", 
+       RowBox[{"-", 
+        SubscriptBox["l", "1"]}], ",", 
+       RowBox[{"-", 
+        SubscriptBox["l", "1"]}], ")"}],
+      DisplayForm], ",", 
+     TagBox[
+      RowBox[{
+       SuperscriptBox[
+        SubscriptBox["A", "3"], "tree"], "(", 
+       RowBox[{"-", 
+        SubscriptBox["l", "1"]}], ",", 
+       SubscriptBox["l", "1"], ",", 
+       SubscriptBox["k", "3"], ")"}],
+      DisplayForm], ",", 
+     TagBox[
+      RowBox[{
+       SuperscriptBox[
+        SubscriptBox["A", "3"], "tree"], "(", 
+       RowBox[{"-", 
+        SubscriptBox["l", "1"]}], ",", 
+       RowBox[{"-", 
+        SubscriptBox["l", "1"]}], ",", 
+       SubscriptBox["k", "4"], ")"}],
+      DisplayForm]}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.9062751814840555`*^9},
+ CellLabel->
+  "Out[326]=",ExpressionUUID->"78180c60-1095-4055-b59b-2e855db992f1"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"bbbbbb", "=", 
+  RowBox[{"Table", "[", 
+   RowBox[{
+    RowBox[{"Sew3", "[", 
+     RowBox[{"aaaa", "[", 
+      RowBox[{"[", "i", "]"}], "]"}], "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"i", ",", "1", ",", "10"}], "}"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.906275243097027*^9, 3.906275278160798*^9}},
+ CellLabel->
+  "In[328]:=",ExpressionUUID->"c948ff22-ff0d-4b2a-8c08-827659aef5bf"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   GraphicsBox[{
+     {Hue[0.6, 0.7, 0.5], Opacity[0.7], {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{0.6245380216637644, -0.24576309369944221`}, {
+          0.7071067811865475, -0.7071067811865475}}]}}, InsetBox[
+        FormBox[
+         SubscriptBox["k", "4"],
+         TraditionalForm], {0.6658224014251559, -0.4764349374429948}, 
+        ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{0.6244926994581556, 0.2458909568443634}, {
+          0.6245380216637644, -0.24576309369944221`}}]}}, InsetBox[
+        RowBox[{"in", "(", "13", ")"}], {0.6245153605609599, 0.000063931572460596},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{0.6244926994581556, 0.2458909568443634}, {
+          0.7071067811865475, 0.7071067811865475}}]}}, InsetBox[
+        FormBox[
+         SubscriptBox["k", "3"],
+         TraditionalForm], {0.6657997403223515, 0.47649886901545546}, 
+        ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{-0.6248136450773634, 
+          0.24585789803829922`}, {-0.7071067811865475, 
+          0.7071067811865475}}]}}, InsetBox[
+        FormBox[
+         SubscriptBox["k", "2"],
+         TraditionalForm], {-0.6659602131319554, 0.47648233961242337}, 
+        ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{-0.6248136450773634, 
+          0.24585789803829922`}, {-0.22311665094694183`, 
+          0.1684297293716036}}]}}, InsetBox[
+        RowBox[{"in", "(", "5", ")"}], {-0.42396514801215257, 0.2071438137049514},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{-0.6242949070937508, -0.24590391465015868`}, \
+{-0.6248136450773634, 0.24585789803829922`}}]}}, InsetBox[
+        RowBox[{"in", "(", "12", ")"}], {-0.6245542760855571, -0.00002300830592973091},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{-0.6242949070937508, -0.24590391465015868`}, \
+{-0.7071067811865475, -0.7071067811865475}}]}}, InsetBox[
+        FormBox[
+         SubscriptBox["k", "1"],
+         TraditionalForm], {-0.6657008441401491, -0.4765053479183531}, 
+        ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{-0.6242949070937508, -0.24590391465015868`}, \
+{-0.22300593933376614`, -0.16794957966027957`}}]}}, InsetBox[
+        RowBox[{"in", "(", "8", ")"}], {-0.42365042321375845, -0.20692674715521914},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{0.2230006431996123, -0.1676626736062281}, {
+          0.6245380216637644, -0.24576309369944221`}}]}}, InsetBox[
+        RowBox[{"in", "(", "14", ")"}], {0.42376933243168835, -0.20671288365283516},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{
+          0.2230006431996123, -0.1676626736062281}, {-0.22300593933376614`, \
+-0.16794957966027957`}}]}}, InsetBox[
+        RowBox[{"in", "(", "11", ")"}], {-2.6480670769213344*^-6, -0.16780612663325384},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{0.22267547907287472`, 0.16848470017113984`}, {
+          0.6244926994581556, 0.2458909568443634}}]}}, InsetBox[
+        RowBox[{"in", "(", "7", ")"}], {0.42358408926551516, 0.20718782850775164},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{0.22267547907287472`, 0.16848470017113984`}, {
+          0.2230006431996123, -0.1676626736062281}}]}}, InsetBox[
+        RowBox[{"in", "(", "10", ")"}], {0.2228380611362435, 0.000411013282455866},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{-0.22311665094694183`, 
+          0.1684297293716036}, {-0.22300593933376614`, \
+-0.16794957966027957`}}]}}, InsetBox[
+        RowBox[{"in", "(", "9", ")"}], {-0.223061295140354, 0.00024007485566202025},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{-0.22311665094694183`, 0.1684297293716036}, {
+          0.22267547907287472`, 0.16848470017113984`}}]}}, InsetBox[
+        RowBox[{"in", "(", "6", ")"}], {-0.00022058593703355722, 0.1684572147713717},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}}, 
+     {Hue[0.6, 0.2, 0.8], EdgeForm[{GrayLevel[0], Opacity[0.7]}], 
+      DiskBox[{0.6245380216637644, -0.24576309369944221}, 
+       0.017674226532102905], 
+      DiskBox[{0.7071067811865475, -0.7071067811865475}, 
+       0.017674226532102905], 
+      DiskBox[{0.6244926994581556, 0.2458909568443634}, 0.017674226532102905],
+       DiskBox[{0.7071067811865475, 0.7071067811865475}, 
+       0.017674226532102905], 
+      DiskBox[{-0.6248136450773634, 0.24585789803829922}, 
+       0.017674226532102905], 
+      DiskBox[{-0.7071067811865475, 0.7071067811865475}, 
+       0.017674226532102905], 
+      DiskBox[{-0.6242949070937508, -0.24590391465015868}, 
+       0.017674226532102905], 
+      DiskBox[{-0.7071067811865475, -0.7071067811865475}, 
+       0.017674226532102905], 
+      DiskBox[{0.2230006431996123, -0.1676626736062281}, 
+       0.017674226532102905], 
+      DiskBox[{-0.22300593933376614, -0.16794957966027957}, 
+       0.017674226532102905], 
+      DiskBox[{0.22267547907287472, 0.16848470017113984}, 
+       0.017674226532102905], 
+      DiskBox[{-0.22311665094694183, 0.1684297293716036}, 
+       0.017674226532102905]}},
+    FormatType->TraditionalForm,
+    FrameTicks->None], ",", 
+   GraphicsBox[{
+     {Hue[0.6, 0.7, 0.5], Opacity[0.7], {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{0.6245380216637644, -0.24576309369944221`}, {
+          0.7071067811865475, -0.7071067811865475}}]}}, InsetBox[
+        FormBox[
+         SubscriptBox["k", "4"],
+         TraditionalForm], {0.6658224014251559, -0.4764349374429948}, 
+        ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{0.6244926994581556, 0.2458909568443634}, {
+          0.6245380216637644, -0.24576309369944221`}}]}}, InsetBox[
+        RowBox[{"in", "(", "13", ")"}], {0.6245153605609599, 0.000063931572460596},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{0.6244926994581556, 0.2458909568443634}, {
+          0.7071067811865475, 0.7071067811865475}}]}}, InsetBox[
+        FormBox[
+         SubscriptBox["k", "3"],
+         TraditionalForm], {0.6657997403223515, 0.47649886901545546}, 
+        ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{-0.6248136450773634, 
+          0.24585789803829922`}, {-0.7071067811865475, 
+          0.7071067811865475}}]}}, InsetBox[
+        FormBox[
+         SubscriptBox["k", "2"],
+         TraditionalForm], {-0.6659602131319554, 0.47648233961242337}, 
+        ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{-0.6248136450773634, 
+          0.24585789803829922`}, {-0.22311665094694183`, 
+          0.1684297293716036}}]}}, InsetBox[
+        RowBox[{"in", "(", "5", ")"}], {-0.42396514801215257, 0.2071438137049514},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{-0.6242949070937508, -0.24590391465015868`}, \
+{-0.6248136450773634, 0.24585789803829922`}}]}}, InsetBox[
+        RowBox[{"in", "(", "12", ")"}], {-0.6245542760855571, -0.00002300830592973091},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{-0.6242949070937508, -0.24590391465015868`}, \
+{-0.7071067811865475, -0.7071067811865475}}]}}, InsetBox[
+        FormBox[
+         SubscriptBox["k", "1"],
+         TraditionalForm], {-0.6657008441401491, -0.4765053479183531}, 
+        ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{-0.6242949070937508, -0.24590391465015868`}, \
+{-0.22300593933376614`, -0.16794957966027957`}}]}}, InsetBox[
+        RowBox[{"in", "(", "8", ")"}], {-0.42365042321375845, -0.20692674715521914},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{0.2230006431996123, -0.1676626736062281}, {
+          0.6245380216637644, -0.24576309369944221`}}]}}, InsetBox[
+        RowBox[{"in", "(", "14", ")"}], {0.42376933243168835, -0.20671288365283516},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{
+          0.2230006431996123, -0.1676626736062281}, {-0.22300593933376614`, \
+-0.16794957966027957`}}]}}, InsetBox[
+        RowBox[{"in", "(", "11", ")"}], {-2.6480670769213344*^-6, -0.16780612663325384},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{0.22267547907287472`, 0.16848470017113984`}, {
+          0.6244926994581556, 0.2458909568443634}}]}}, InsetBox[
+        RowBox[{"in", "(", "7", ")"}], {0.42358408926551516, 0.20718782850775164},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{0.22267547907287472`, 0.16848470017113984`}, {
+          0.2230006431996123, -0.1676626736062281}}]}}, InsetBox[
+        RowBox[{"in", "(", "10", ")"}], {0.2228380611362435, 0.000411013282455866},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{-0.22311665094694183`, 
+          0.1684297293716036}, {-0.22300593933376614`, \
+-0.16794957966027957`}}]}}, InsetBox[
+        RowBox[{"in", "(", "9", ")"}], {-0.223061295140354, 0.00024007485566202025},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{-0.22311665094694183`, 0.1684297293716036}, {
+          0.22267547907287472`, 0.16848470017113984`}}]}}, InsetBox[
+        RowBox[{"in", "(", "6", ")"}], {-0.00022058593703355722, 0.1684572147713717},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}}, 
+     {Hue[0.6, 0.2, 0.8], EdgeForm[{GrayLevel[0], Opacity[0.7]}], 
+      DiskBox[{0.6245380216637644, -0.24576309369944221}, 
+       0.017674226532102905], 
+      DiskBox[{0.7071067811865475, -0.7071067811865475}, 
+       0.017674226532102905], 
+      DiskBox[{0.6244926994581556, 0.2458909568443634}, 0.017674226532102905],
+       DiskBox[{0.7071067811865475, 0.7071067811865475}, 
+       0.017674226532102905], 
+      DiskBox[{-0.6248136450773634, 0.24585789803829922}, 
+       0.017674226532102905], 
+      DiskBox[{-0.7071067811865475, 0.7071067811865475}, 
+       0.017674226532102905], 
+      DiskBox[{-0.6242949070937508, -0.24590391465015868}, 
+       0.017674226532102905], 
+      DiskBox[{-0.7071067811865475, -0.7071067811865475}, 
+       0.017674226532102905], 
+      DiskBox[{0.2230006431996123, -0.1676626736062281}, 
+       0.017674226532102905], 
+      DiskBox[{-0.22300593933376614, -0.16794957966027957}, 
+       0.017674226532102905], 
+      DiskBox[{0.22267547907287472, 0.16848470017113984}, 
+       0.017674226532102905], 
+      DiskBox[{-0.22311665094694183, 0.1684297293716036}, 
+       0.017674226532102905]}},
+    FormatType->TraditionalForm,
+    FrameTicks->None], ",", 
+   GraphicsBox[{
+     {Hue[0.6, 0.7, 0.5], Opacity[0.7], {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{0.5220272925310698, -0.18415576292380595`}, {
+          0.7071067811865475, -0.7071067811865475}}]}}, InsetBox[
+        FormBox[
+         SubscriptBox["k", "4"],
+         TraditionalForm], {0.6145670368588086, -0.4456312720551767}, 
+        ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{0.7136863005037916, 0.27025260510282634`}, {
+          0.5220272925310698, -0.18415576292380595`}}]}}, InsetBox[
+        RowBox[{"in", "(", "14", ")"}], {0.6178567965174306, 0.043048421089510194},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{0.7136863005037916, 0.27025260510282634`}, {
+          0.7071067811865475, 0.7071067811865475}}]}}, InsetBox[
+        FormBox[
+         SubscriptBox["k", "3"],
+         TraditionalForm], {0.7103965408451696, 0.4886796931446869}, 
+        ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{-0.511905783729678, 
+          0.1998822366196026}, {-0.7071067811865475, 0.7071067811865475}}]}}, 
+       InsetBox[
+        FormBox[
+         SubscriptBox["k", "2"],
+         TraditionalForm], {-0.6095062824581128, 0.453494508903075}, 
+        ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{-0.511905783729678, 
+          0.1998822366196026}, {-0.5161777602956655, \
+-0.04335155688216063}}]}}, InsetBox[
+        RowBox[{"in", "(", "5", ")"}], {-0.5140417720126718, 0.07826533986872099},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{-0.7449808659383101, -0.26917009279312937`}, \
+{-0.511905783729678, 0.1998822366196026}}]}}, InsetBox[
+        RowBox[{"in", "(", "12", ")"}], 
+        {-0.628443324833994, -0.03464392808676338}, ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{-0.7449808659383101, -0.26917009279312937`}, \
+{-0.7071067811865475, -0.7071067811865475}}]}}, InsetBox[
+        FormBox[
+         SubscriptBox["k", "1"],
+         TraditionalForm], {-0.7260438235624288, -0.4881384369898384}, 
+        ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{-0.7449808659383101, -0.26917009279312937`}, \
+{-0.521490350365712, -0.30789627026223765`}}]}}, InsetBox[
+        RowBox[{"in", "(", "8", ")"}], {-0.6332356081520111, -0.2885331815276835},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{0.0036751140156513927`, -0.005617903708537614}, {
+          0.5220272925310698, -0.18415576292380595`}}]}}, InsetBox[
+        RowBox[{"in", "(", "15", ")"}], {0.2628512032733606, -0.09488683331617179},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{
+          0.0036751140156513927`, -0.005617903708537614}, {-0.511905783729678,
+           0.1998822366196026}}]}}, InsetBox[
+        RowBox[{"in", "(", "12", ")"}], {-0.2541153348570133, 0.09713216645553249},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{-0.2622090496182486, -0.17070565389982534`}, {
+          0.0036751140156513927`, -0.005617903708537614}}]}}, InsetBox[
+        RowBox[{"in", "(", "11", ")"}], {-0.1292669678012986, -0.08816177880418148},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{-0.2622090496182486, -0.17070565389982534`}, \
+{-0.521490350365712, -0.30789627026223765`}}]}}, InsetBox[
+        RowBox[{"in", "(", "8", ")"}], {-0.39184969999198027, -0.2393009620810315},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{-0.5161777602956655, -0.04335155688216063}, \
+{-0.2622090496182486, -0.17070565389982534`}}]}}, InsetBox[
+        RowBox[{"in", "(", "7", ")"}], {-0.3891934049569571, -0.10702860539099299},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{-0.5161777602956655, -0.04335155688216063}, \
+{-0.521490350365712, -0.30789627026223765`}}]}}, InsetBox[
+        RowBox[{"in", "(", "10", ")"}], {-0.5188340553306887, -0.17562391357219914},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}}, 
+     {Hue[0.6, 0.2, 0.8], EdgeForm[{GrayLevel[0], Opacity[0.7]}], 
+      DiskBox[{0.5220272925310698, -0.18415576292380595}, 
+       0.018062278956321898], 
+      DiskBox[{0.7071067811865475, -0.7071067811865475}, 
+       0.018062278956321898], 
+      DiskBox[{0.7136863005037916, 0.27025260510282634}, 
+       0.018062278956321898], 
+      DiskBox[{0.7071067811865475, 0.7071067811865475}, 0.018062278956321898],
+       DiskBox[{-0.511905783729678, 0.1998822366196026}, 
+       0.018062278956321898], 
+      DiskBox[{-0.7071067811865475, 0.7071067811865475}, 
+       0.018062278956321898], 
+      DiskBox[{-0.7449808659383101, -0.26917009279312937}, 
+       0.018062278956321898], 
+      DiskBox[{-0.7071067811865475, -0.7071067811865475}, 
+       0.018062278956321898], 
+      DiskBox[{0.0036751140156513927, -0.005617903708537614}, 
+       0.018062278956321898], 
+      DiskBox[{-0.2622090496182486, -0.17070565389982534}, 
+       0.018062278956321898], 
+      DiskBox[{-0.5161777602956655, -0.04335155688216063}, 
+       0.018062278956321898], 
+      DiskBox[{-0.521490350365712, -0.30789627026223765}, 
+       0.018062278956321898]}},
+    FormatType->TraditionalForm,
+    FrameTicks->None], ",", 
+   GraphicsBox[{
+     {Hue[0.6, 0.7, 0.5], Opacity[0.7], {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{0.6245380216637644, -0.24576309369944221`}, {
+          0.7071067811865475, -0.7071067811865475}}]}}, InsetBox[
+        FormBox[
+         SubscriptBox["k", "4"],
+         TraditionalForm], {0.6658224014251559, -0.4764349374429948}, 
+        ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{0.6244926994581556, 0.2458909568443634}, {
+          0.6245380216637644, -0.24576309369944221`}}]}}, InsetBox[
+        RowBox[{"in", "(", "13", ")"}], {0.6245153605609599, 0.000063931572460596},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{0.6244926994581556, 0.2458909568443634}, {
+          0.7071067811865475, 0.7071067811865475}}]}}, InsetBox[
+        FormBox[
+         SubscriptBox["k", "3"],
+         TraditionalForm], {0.6657997403223515, 0.47649886901545546}, 
+        ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{-0.6248136450773634, 
+          0.24585789803829922`}, {-0.7071067811865475, 
+          0.7071067811865475}}]}}, InsetBox[
+        FormBox[
+         SubscriptBox["k", "2"],
+         TraditionalForm], {-0.6659602131319554, 0.47648233961242337}, 
+        ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{-0.6248136450773634, 
+          0.24585789803829922`}, {-0.22311665094694183`, 
+          0.1684297293716036}}]}}, InsetBox[
+        RowBox[{"in", "(", "5", ")"}], {-0.42396514801215257, 0.2071438137049514},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{-0.6242949070937508, -0.24590391465015868`}, \
+{-0.6248136450773634, 0.24585789803829922`}}]}}, InsetBox[
+        RowBox[{"in", "(", "12", ")"}], {-0.6245542760855571, -0.00002300830592973091},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{-0.6242949070937508, -0.24590391465015868`}, \
+{-0.7071067811865475, -0.7071067811865475}}]}}, InsetBox[
+        FormBox[
+         SubscriptBox["k", "1"],
+         TraditionalForm], {-0.6657008441401491, -0.4765053479183531}, 
+        ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{-0.6242949070937508, -0.24590391465015868`}, \
+{-0.22300593933376614`, -0.16794957966027957`}}]}}, InsetBox[
+        RowBox[{"in", "(", "8", ")"}], {-0.42365042321375845, -0.20692674715521914},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{0.2230006431996123, -0.1676626736062281}, {
+          0.6245380216637644, -0.24576309369944221`}}]}}, InsetBox[
+        RowBox[{"in", "(", "14", ")"}], {0.42376933243168835, -0.20671288365283516},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{
+          0.2230006431996123, -0.1676626736062281}, {-0.22300593933376614`, \
+-0.16794957966027957`}}]}}, InsetBox[
+        RowBox[{"in", "(", "11", ")"}], {-2.6480670769213344*^-6, -0.16780612663325384},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{0.22267547907287472`, 0.16848470017113984`}, {
+          0.6244926994581556, 0.2458909568443634}}]}}, InsetBox[
+        RowBox[{"in", "(", "7", ")"}], {0.42358408926551516, 0.20718782850775164},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{0.22267547907287472`, 0.16848470017113984`}, {
+          0.2230006431996123, -0.1676626736062281}}]}}, InsetBox[
+        RowBox[{"in", "(", "10", ")"}], {0.2228380611362435, 0.000411013282455866},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{-0.22311665094694183`, 
+          0.1684297293716036}, {-0.22300593933376614`, \
+-0.16794957966027957`}}]}}, InsetBox[
+        RowBox[{"in", "(", "9", ")"}], {-0.223061295140354, 0.00024007485566202025},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{-0.22311665094694183`, 0.1684297293716036}, {
+          0.22267547907287472`, 0.16848470017113984`}}]}}, InsetBox[
+        RowBox[{"in", "(", "6", ")"}], {-0.00022058593703355722, 0.1684572147713717},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}}, 
+     {Hue[0.6, 0.2, 0.8], EdgeForm[{GrayLevel[0], Opacity[0.7]}], 
+      DiskBox[{0.6245380216637644, -0.24576309369944221}, 
+       0.017674226532102905], 
+      DiskBox[{0.7071067811865475, -0.7071067811865475}, 
+       0.017674226532102905], 
+      DiskBox[{0.6244926994581556, 0.2458909568443634}, 0.017674226532102905],
+       DiskBox[{0.7071067811865475, 0.7071067811865475}, 
+       0.017674226532102905], 
+      DiskBox[{-0.6248136450773634, 0.24585789803829922}, 
+       0.017674226532102905], 
+      DiskBox[{-0.7071067811865475, 0.7071067811865475}, 
+       0.017674226532102905], 
+      DiskBox[{-0.6242949070937508, -0.24590391465015868}, 
+       0.017674226532102905], 
+      DiskBox[{-0.7071067811865475, -0.7071067811865475}, 
+       0.017674226532102905], 
+      DiskBox[{0.2230006431996123, -0.1676626736062281}, 
+       0.017674226532102905], 
+      DiskBox[{-0.22300593933376614, -0.16794957966027957}, 
+       0.017674226532102905], 
+      DiskBox[{0.22267547907287472, 0.16848470017113984}, 
+       0.017674226532102905], 
+      DiskBox[{-0.22311665094694183, 0.1684297293716036}, 
+       0.017674226532102905]}},
+    FormatType->TraditionalForm,
+    FrameTicks->None], ",", 
+   GraphicsBox[{
+     {Hue[0.6, 0.7, 0.5], Opacity[0.7], {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{0.6576102290677887, -0.2340383981132245}, {
+          0.7071067811865475, -0.7071067811865475}}]}}, InsetBox[
+        FormBox[
+         SubscriptBox["k", "4"],
+         TraditionalForm], {0.6823585051271681, -0.47057258964988596}, 
+        ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{0.8186019377104281, 0.2568544692610255}, {
+          0.6576102290677887, -0.2340383981132245}}]}}, InsetBox[
+        RowBox[{"in", "(", "15", ")"}], {0.7381060833891084, 0.011408035573900507},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{0.8186019377104281, 0.2568544692610255}, {
+          0.7071067811865475, 0.7071067811865475}}]}}, InsetBox[
+        FormBox[
+         SubscriptBox["k", "3"],
+         TraditionalForm], {0.7628543594484878, 0.4819806252237865}, 
+        ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{-0.8222119781259699, 
+          0.25103054238987055`}, {-0.7071067811865475, 
+          0.7071067811865475}}]}}, InsetBox[
+        FormBox[
+         SubscriptBox["k", "2"],
+         TraditionalForm], {-0.7646593796562586, 0.479068661788209}, 
+        ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{-0.8222119781259699, 
+          0.25103054238987055`}, {-0.690394062845737, 
+          0.02817318710127027}}]}}, InsetBox[
+        RowBox[{"in", "(", "5", ")"}], {-0.7563030204858534, 0.1396018647455704},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{-0.7485689169584414, -0.26881190295137186`}, \
+{-0.8222119781259699, 0.25103054238987055`}}]}}, InsetBox[
+        RowBox[{"in", "(", "12", ")"}], {-0.7853904475422057, -0.008890680280750657},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{-0.7485689169584414, -0.26881190295137186`}, \
+{-0.7071067811865475, -0.7071067811865475}}]}}, InsetBox[
+        FormBox[
+         SubscriptBox["k", "1"],
+         TraditionalForm], {-0.7278378490724944, -0.48795934206895963}, 
+        ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{-0.7485689169584414, -0.26881190295137186`}, \
+{-0.35232438505311087`, -0.13025756707285632`}}]}}, InsetBox[
+        RowBox[{"in", "(", "8", ")"}], {-0.5504466510057762, -0.1995347350121141},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{0.17697973061292985`, -0.22395558153721898`}, {
+          0.6576102290677887, -0.2340383981132245}}]}}, InsetBox[
+        RowBox[{"in", "(", "16", ")"}], {0.41729497984035924, -0.22899698982522174},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{
+          0.17697973061292985`, -0.22395558153721898`}, \
+{-0.35232438505311087`, -0.13025756707285632`}}]}}, InsetBox[
+        RowBox[{"in", "(", "13", ")"}], {-0.08767232722009051, -0.17710657430503765},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{-0.5297733023057017, 
+          0.19276628174889068`}, {-0.8222119781259699, 
+          0.25103054238987055`}}]}}, InsetBox[
+        RowBox[{"in", "(", "12", ")"}], {-0.6759926402158358, 0.2218984120693806},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{-0.5297733023057017, 
+          0.19276628174889068`}, {-0.35232438505311087`, \
+-0.13025756707285632`}}]}}, InsetBox[
+        RowBox[{"in", "(", "9", ")"}], {-0.44104884367940633, 0.03125435733801718},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{-0.690394062845737, 
+          0.02817318710127027}, {-0.35232438505311087`, \
+-0.13025756707285632`}}]}}, InsetBox[
+        RowBox[{"in", "(", "9", ")"}], {-0.5213592239494239, -0.051042189985793025},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{-0.690394062845737, 
+          0.02817318710127027}, {-0.5297733023057017, 
+          0.19276628174889068`}}]}}, InsetBox[
+        RowBox[{"in", "(", "6", ")"}], {-0.6100836825757194, 0.11046973442508047},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}}, 
+     {Hue[0.6, 0.2, 0.8], EdgeForm[{GrayLevel[0], Opacity[0.7]}], 
+      DiskBox[{0.6576102290677887, -0.2340383981132245}, 0.01962882080621614],
+       DiskBox[{0.7071067811865475, -0.7071067811865475}, 
+       0.01962882080621614], 
+      DiskBox[{0.8186019377104281, 0.2568544692610255}, 0.01962882080621614], 
+      DiskBox[{0.7071067811865475, 0.7071067811865475}, 0.01962882080621614], 
+      DiskBox[{-0.8222119781259699, 0.25103054238987055}, 
+       0.01962882080621614], 
+      DiskBox[{-0.7071067811865475, 0.7071067811865475}, 0.01962882080621614],
+       DiskBox[{-0.7485689169584414, -0.26881190295137186}, 
+       0.01962882080621614], 
+      DiskBox[{-0.7071067811865475, -0.7071067811865475}, 
+       0.01962882080621614], 
+      DiskBox[{0.17697973061292985, -0.22395558153721898}, 
+       0.01962882080621614], 
+      DiskBox[{-0.35232438505311087, -0.13025756707285632}, 
+       0.01962882080621614], 
+      DiskBox[{-0.5297733023057017, 0.19276628174889068}, 
+       0.01962882080621614], 
+      DiskBox[{-0.690394062845737, 0.02817318710127027}, 
+       0.01962882080621614]}},
+    FormatType->TraditionalForm,
+    FrameTicks->None], ",", 
+   GraphicsBox[{
+     {Hue[0.6, 0.7, 0.5], Opacity[0.7], {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{0.6463181234441443, -0.24209059032391578`}, {
+          0.7071067811865475, -0.7071067811865475}}]}}, InsetBox[
+        FormBox[
+         SubscriptBox["k", "4"],
+         TraditionalForm], {0.6767124523153458, -0.4745986857552316}, 
+        ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{0.7248781879235993, 0.25018480016838274`}, {
+          0.6463181234441443, -0.24209059032391578`}}]}}, InsetBox[
+        RowBox[{"in", "(", "13", ")"}], {0.6855981556838717, 0.00404710492223348},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{0.7248781879235993, 0.25018480016838274`}, {
+          0.7071067811865475, 0.7071067811865475}}]}}, InsetBox[
+        FormBox[
+         SubscriptBox["k", "3"],
+         TraditionalForm], {0.7159924845550734, 0.4786457906774651}, 
+        ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{-0.6916312071883824, 
+          0.21887751962283283`}, {-0.7071067811865475, 
+          0.7071067811865475}}]}}, InsetBox[
+        FormBox[
+         SubscriptBox["k", "2"],
+         TraditionalForm], {-0.699368994187465, 0.46299215040469016}, 
+        ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{-0.6916312071883824, 
+          0.21887751962283283`}, {-0.3176896281113299, \
+-0.0011393730152298742`}}]}}, InsetBox[
+        RowBox[{"in", "(", "11", ")"}], {-0.5046604176498561, 0.10886907330380148},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{-0.684230740724418, -0.23261679577833946`}, \
+{-0.6916312071883824, 0.21887751962283283`}}]}}, InsetBox[
+        RowBox[{"in", "(", "12", ")"}], {-0.6879309739564002, -0.006869638077753315},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{-0.684230740724418, -0.23261679577833946`}, \
+{-0.7071067811865475, -0.7071067811865475}}]}}, InsetBox[
+        FormBox[
+         SubscriptBox["k", "1"],
+         TraditionalForm], {-0.6956687609554828, -0.4698617884824435}, 
+        ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{-0.684230740724418, -0.23261679577833946`}, \
+{-0.3176896281113299, -0.0011393730152298742`}}]}}, InsetBox[
+        RowBox[{"in", "(", "8", ")"}], {-0.5009601844178739, -0.11687808439678467},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{0.20078047920882416`, -0.10995446288678826`}, {
+          0.6463181234441443, -0.24209059032391578`}}]}}, InsetBox[
+        RowBox[{"in", "(", "14", ")"}], {0.4235493013264842, -0.176022526605352},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{
+          0.20078047920882416`, -0.10995446288678826`}, {-0.3176896281113299, \
+-0.0011393730152298742`}}]}}, InsetBox[
+        RowBox[{"in", "(", "11", ")"}], {-0.058454574451252864, -0.055546917951009064},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{0.3573363505448485, 0.20610387192903465`}, {
+          0.7248781879235993, 0.25018480016838274`}}]}}, InsetBox[
+        RowBox[{"in", "(", "7", ")"}], {0.5411072692342239, 0.2281443360487087},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{0.3573363505448485, 0.20610387192903465`}, {
+          0.20078047920882416`, -0.10995446288678826`}}]}}, InsetBox[
+        RowBox[{"in", "(", "10", ")"}], {0.27905841487683636, 0.048074704521123196},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{-0.02434183384951734, 
+          0.246283596642344}, {-0.3176896281113299, \
+-0.0011393730152298742`}}]}}, InsetBox[
+        RowBox[{"in", "(", "9", ")"}], {-0.1710157309804236, 0.12257211181355707},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{-0.02434183384951734, 0.246283596642344}, {
+          0.3573363505448485, 0.20610387192903465`}}]}}, InsetBox[
+        RowBox[{"in", "(", "6", ")"}], {0.1664972583476656, 0.22619373428568934},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}}, 
+     {Hue[0.6, 0.2, 0.8], EdgeForm[{GrayLevel[0], Opacity[0.7]}], 
+      DiskBox[{0.6463181234441443, -0.24209059032391578}, 
+       0.017829633449760657], 
+      DiskBox[{0.7071067811865475, -0.7071067811865475}, 
+       0.017829633449760657], 
+      DiskBox[{0.7248781879235993, 0.25018480016838274}, 
+       0.017829633449760657], 
+      DiskBox[{0.7071067811865475, 0.7071067811865475}, 0.017829633449760657],
+       DiskBox[{-0.6916312071883824, 0.21887751962283283}, 
+       0.017829633449760657], 
+      DiskBox[{-0.7071067811865475, 0.7071067811865475}, 
+       0.017829633449760657], 
+      DiskBox[{-0.684230740724418, -0.23261679577833946}, 
+       0.017829633449760657], 
+      DiskBox[{-0.7071067811865475, -0.7071067811865475}, 
+       0.017829633449760657], 
+      DiskBox[{0.20078047920882416, -0.10995446288678826}, 
+       0.017829633449760657], 
+      DiskBox[{-0.3176896281113299, -0.0011393730152298742}, 
+       0.017829633449760657], 
+      DiskBox[{0.3573363505448485, 0.20610387192903465}, 
+       0.017829633449760657], 
+      DiskBox[{-0.02434183384951734, 0.246283596642344}, 
+       0.017829633449760657]}},
+    FormatType->TraditionalForm,
+    FrameTicks->None], ",", 
+   GraphicsBox[{
+     {Hue[0.6, 0.7, 0.5], Opacity[0.7], {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{0.6245380216637644, -0.24576309369944221`}, {
+          0.7071067811865475, -0.7071067811865475}}]}}, InsetBox[
+        FormBox[
+         SubscriptBox["k", "4"],
+         TraditionalForm], {0.6658224014251559, -0.4764349374429948}, 
+        ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{0.6244926994581556, 0.2458909568443634}, {
+          0.6245380216637644, -0.24576309369944221`}}]}}, InsetBox[
+        RowBox[{"in", "(", "13", ")"}], {0.6245153605609599, 0.000063931572460596},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{0.6244926994581556, 0.2458909568443634}, {
+          0.7071067811865475, 0.7071067811865475}}]}}, InsetBox[
+        FormBox[
+         SubscriptBox["k", "3"],
+         TraditionalForm], {0.6657997403223515, 0.47649886901545546}, 
+        ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{-0.6248136450773634, 
+          0.24585789803829922`}, {-0.7071067811865475, 
+          0.7071067811865475}}]}}, InsetBox[
+        FormBox[
+         SubscriptBox["k", "2"],
+         TraditionalForm], {-0.6659602131319554, 0.47648233961242337}, 
+        ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{-0.6248136450773634, 
+          0.24585789803829922`}, {-0.22311665094694183`, 
+          0.1684297293716036}}]}}, InsetBox[
+        RowBox[{"in", "(", "5", ")"}], {-0.42396514801215257, 0.2071438137049514},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{-0.6242949070937508, -0.24590391465015868`}, \
+{-0.6248136450773634, 0.24585789803829922`}}]}}, InsetBox[
+        RowBox[{"in", "(", "12", ")"}], {-0.6245542760855571, -0.00002300830592973091},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{-0.6242949070937508, -0.24590391465015868`}, \
+{-0.7071067811865475, -0.7071067811865475}}]}}, InsetBox[
+        FormBox[
+         SubscriptBox["k", "1"],
+         TraditionalForm], {-0.6657008441401491, -0.4765053479183531}, 
+        ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{-0.6242949070937508, -0.24590391465015868`}, \
+{-0.22300593933376614`, -0.16794957966027957`}}]}}, InsetBox[
+        RowBox[{"in", "(", "8", ")"}], {-0.42365042321375845, -0.20692674715521914},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{0.2230006431996123, -0.1676626736062281}, {
+          0.6245380216637644, -0.24576309369944221`}}]}}, InsetBox[
+        RowBox[{"in", "(", "14", ")"}], {0.42376933243168835, -0.20671288365283516},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{
+          0.2230006431996123, -0.1676626736062281}, {-0.22300593933376614`, \
+-0.16794957966027957`}}]}}, InsetBox[
+        RowBox[{"in", "(", "11", ")"}], {-2.6480670769213344*^-6, -0.16780612663325384},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{0.22267547907287472`, 0.16848470017113984`}, {
+          0.6244926994581556, 0.2458909568443634}}]}}, InsetBox[
+        RowBox[{"in", "(", "7", ")"}], {0.42358408926551516, 0.20718782850775164},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{0.22267547907287472`, 0.16848470017113984`}, {
+          0.2230006431996123, -0.1676626736062281}}]}}, InsetBox[
+        RowBox[{"in", "(", "10", ")"}], {0.2228380611362435, 0.000411013282455866},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{-0.22311665094694183`, 
+          0.1684297293716036}, {-0.22300593933376614`, \
+-0.16794957966027957`}}]}}, InsetBox[
+        RowBox[{"in", "(", "9", ")"}], {-0.223061295140354, 0.00024007485566202025},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{-0.22311665094694183`, 0.1684297293716036}, {
+          0.22267547907287472`, 0.16848470017113984`}}]}}, InsetBox[
+        RowBox[{"in", "(", "6", ")"}], {-0.00022058593703355722, 0.1684572147713717},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}}, 
+     {Hue[0.6, 0.2, 0.8], EdgeForm[{GrayLevel[0], Opacity[0.7]}], 
+      DiskBox[{0.6245380216637644, -0.24576309369944221}, 
+       0.017674226532102905], 
+      DiskBox[{0.7071067811865475, -0.7071067811865475}, 
+       0.017674226532102905], 
+      DiskBox[{0.6244926994581556, 0.2458909568443634}, 0.017674226532102905],
+       DiskBox[{0.7071067811865475, 0.7071067811865475}, 
+       0.017674226532102905], 
+      DiskBox[{-0.6248136450773634, 0.24585789803829922}, 
+       0.017674226532102905], 
+      DiskBox[{-0.7071067811865475, 0.7071067811865475}, 
+       0.017674226532102905], 
+      DiskBox[{-0.6242949070937508, -0.24590391465015868}, 
+       0.017674226532102905], 
+      DiskBox[{-0.7071067811865475, -0.7071067811865475}, 
+       0.017674226532102905], 
+      DiskBox[{0.2230006431996123, -0.1676626736062281}, 
+       0.017674226532102905], 
+      DiskBox[{-0.22300593933376614, -0.16794957966027957}, 
+       0.017674226532102905], 
+      DiskBox[{0.22267547907287472, 0.16848470017113984}, 
+       0.017674226532102905], 
+      DiskBox[{-0.22311665094694183, 0.1684297293716036}, 
+       0.017674226532102905]}},
+    FormatType->TraditionalForm,
+    FrameTicks->None], ",", 
+   GraphicsBox[{
+     {Hue[0.6, 0.7, 0.5], Opacity[0.7], {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{0.6245380216637644, -0.24576309369944221`}, {
+          0.7071067811865475, -0.7071067811865475}}]}}, InsetBox[
+        FormBox[
+         SubscriptBox["k", "4"],
+         TraditionalForm], {0.6658224014251559, -0.4764349374429948}, 
+        ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{0.6244926994581556, 0.2458909568443634}, {
+          0.6245380216637644, -0.24576309369944221`}}]}}, InsetBox[
+        RowBox[{"in", "(", "13", ")"}], {0.6245153605609599, 0.000063931572460596},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{0.6244926994581556, 0.2458909568443634}, {
+          0.7071067811865475, 0.7071067811865475}}]}}, InsetBox[
+        FormBox[
+         SubscriptBox["k", "3"],
+         TraditionalForm], {0.6657997403223515, 0.47649886901545546}, 
+        ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{-0.6248136450773634, 
+          0.24585789803829922`}, {-0.7071067811865475, 
+          0.7071067811865475}}]}}, InsetBox[
+        FormBox[
+         SubscriptBox["k", "2"],
+         TraditionalForm], {-0.6659602131319554, 0.47648233961242337}, 
+        ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{-0.6248136450773634, 
+          0.24585789803829922`}, {-0.22311665094694183`, 
+          0.1684297293716036}}]}}, InsetBox[
+        RowBox[{"in", "(", "5", ")"}], {-0.42396514801215257, 0.2071438137049514},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{-0.6242949070937508, -0.24590391465015868`}, \
+{-0.6248136450773634, 0.24585789803829922`}}]}}, InsetBox[
+        RowBox[{"in", "(", "12", ")"}], {-0.6245542760855571, -0.00002300830592973091},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{-0.6242949070937508, -0.24590391465015868`}, \
+{-0.7071067811865475, -0.7071067811865475}}]}}, InsetBox[
+        FormBox[
+         SubscriptBox["k", "1"],
+         TraditionalForm], {-0.6657008441401491, -0.4765053479183531}, 
+        ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{-0.6242949070937508, -0.24590391465015868`}, \
+{-0.22300593933376614`, -0.16794957966027957`}}]}}, InsetBox[
+        RowBox[{"in", "(", "8", ")"}], {-0.42365042321375845, -0.20692674715521914},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{0.2230006431996123, -0.1676626736062281}, {
+          0.6245380216637644, -0.24576309369944221`}}]}}, InsetBox[
+        RowBox[{"in", "(", "14", ")"}], {0.42376933243168835, -0.20671288365283516},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{
+          0.2230006431996123, -0.1676626736062281}, {-0.22300593933376614`, \
+-0.16794957966027957`}}]}}, InsetBox[
+        RowBox[{"in", "(", "11", ")"}], {-2.6480670769213344*^-6, -0.16780612663325384},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{0.22267547907287472`, 0.16848470017113984`}, {
+          0.6244926994581556, 0.2458909568443634}}]}}, InsetBox[
+        RowBox[{"in", "(", "7", ")"}], {0.42358408926551516, 0.20718782850775164},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{0.22267547907287472`, 0.16848470017113984`}, {
+          0.2230006431996123, -0.1676626736062281}}]}}, InsetBox[
+        RowBox[{"in", "(", "10", ")"}], {0.2228380611362435, 0.000411013282455866},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{-0.22311665094694183`, 
+          0.1684297293716036}, {-0.22300593933376614`, \
+-0.16794957966027957`}}]}}, InsetBox[
+        RowBox[{"in", "(", "9", ")"}], {-0.223061295140354, 0.00024007485566202025},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{-0.22311665094694183`, 0.1684297293716036}, {
+          0.22267547907287472`, 0.16848470017113984`}}]}}, InsetBox[
+        RowBox[{"in", "(", "6", ")"}], {-0.00022058593703355722, 0.1684572147713717},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}}, 
+     {Hue[0.6, 0.2, 0.8], EdgeForm[{GrayLevel[0], Opacity[0.7]}], 
+      DiskBox[{0.6245380216637644, -0.24576309369944221}, 
+       0.017674226532102905], 
+      DiskBox[{0.7071067811865475, -0.7071067811865475}, 
+       0.017674226532102905], 
+      DiskBox[{0.6244926994581556, 0.2458909568443634}, 0.017674226532102905],
+       DiskBox[{0.7071067811865475, 0.7071067811865475}, 
+       0.017674226532102905], 
+      DiskBox[{-0.6248136450773634, 0.24585789803829922}, 
+       0.017674226532102905], 
+      DiskBox[{-0.7071067811865475, 0.7071067811865475}, 
+       0.017674226532102905], 
+      DiskBox[{-0.6242949070937508, -0.24590391465015868}, 
+       0.017674226532102905], 
+      DiskBox[{-0.7071067811865475, -0.7071067811865475}, 
+       0.017674226532102905], 
+      DiskBox[{0.2230006431996123, -0.1676626736062281}, 
+       0.017674226532102905], 
+      DiskBox[{-0.22300593933376614, -0.16794957966027957}, 
+       0.017674226532102905], 
+      DiskBox[{0.22267547907287472, 0.16848470017113984}, 
+       0.017674226532102905], 
+      DiskBox[{-0.22311665094694183, 0.1684297293716036}, 
+       0.017674226532102905]}},
+    FormatType->TraditionalForm,
+    FrameTicks->None], ",", 
+   GraphicsBox[{
+     {Hue[0.6, 0.7, 0.5], Opacity[0.7], {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{0.6245380216637644, -0.24576309369944221`}, {
+          0.7071067811865475, -0.7071067811865475}}]}}, InsetBox[
+        FormBox[
+         SubscriptBox["k", "4"],
+         TraditionalForm], {0.6658224014251559, -0.4764349374429948}, 
+        ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{0.6244926994581556, 0.2458909568443634}, {
+          0.6245380216637644, -0.24576309369944221`}}]}}, InsetBox[
+        RowBox[{"in", "(", "16", ")"}], {0.6245153605609599, 0.000063931572460596},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{0.6244926994581556, 0.2458909568443634}, {
+          0.7071067811865475, 0.7071067811865475}}]}}, InsetBox[
+        FormBox[
+         SubscriptBox["k", "3"],
+         TraditionalForm], {0.6657997403223515, 0.47649886901545546}, 
+        ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{-0.6248136450773634, 
+          0.24585789803829922`}, {-0.7071067811865475, 
+          0.7071067811865475}}]}}, InsetBox[
+        FormBox[
+         SubscriptBox["k", "2"],
+         TraditionalForm], {-0.6659602131319554, 0.47648233961242337}, 
+        ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{-0.6248136450773634, 
+          0.24585789803829922`}, {-0.22311665094694183`, 
+          0.1684297293716036}}]}}, InsetBox[
+        RowBox[{"in", "(", "5", ")"}], {-0.42396514801215257, 0.2071438137049514},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{-0.6242949070937508, -0.24590391465015868`}, \
+{-0.6248136450773634, 0.24585789803829922`}}]}}, InsetBox[
+        RowBox[{"in", "(", "12", ")"}], {-0.6245542760855571, -0.00002300830592973091},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{-0.6242949070937508, -0.24590391465015868`}, \
+{-0.7071067811865475, -0.7071067811865475}}]}}, InsetBox[
+        FormBox[
+         SubscriptBox["k", "1"],
+         TraditionalForm], {-0.6657008441401491, -0.4765053479183531}, 
+        ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{-0.6242949070937508, -0.24590391465015868`}, \
+{-0.22300593933376614`, -0.16794957966027957`}}]}}, InsetBox[
+        RowBox[{"in", "(", "8", ")"}], {-0.42365042321375845, -0.20692674715521914},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{0.2230006431996123, -0.1676626736062281}, {
+          0.6245380216637644, -0.24576309369944221`}}]}}, InsetBox[
+        RowBox[{"in", "(", "17", ")"}], {0.42376933243168835, -0.20671288365283516},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{
+          0.2230006431996123, -0.1676626736062281}, {-0.22300593933376614`, \
+-0.16794957966027957`}}]}}, InsetBox[
+        RowBox[{"in", "(", "14", ")"}], {-2.6480670769213344*^-6, -0.16780612663325384},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{0.22267547907287472`, 0.16848470017113984`}, {
+          0.6244926994581556, 0.2458909568443634}}]}}, InsetBox[
+        RowBox[{"in", "(", "7", ")"}], {0.42358408926551516, 0.20718782850775164},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{0.22267547907287472`, 0.16848470017113984`}, {
+          0.2230006431996123, -0.1676626736062281}}]}}, InsetBox[
+        RowBox[{"in", "(", "10", ")"}], {0.2228380611362435, 0.000411013282455866},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{-0.22311665094694183`, 
+          0.1684297293716036}, {-0.22300593933376614`, \
+-0.16794957966027957`}}]}}, InsetBox[
+        RowBox[{"in", "(", "9", ")"}], {-0.223061295140354, 0.00024007485566202025},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{-0.22311665094694183`, 0.1684297293716036}, {
+          0.22267547907287472`, 0.16848470017113984`}}]}}, InsetBox[
+        RowBox[{"in", "(", "6", ")"}], {-0.00022058593703355722, 0.1684572147713717},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}}, 
+     {Hue[0.6, 0.2, 0.8], EdgeForm[{GrayLevel[0], Opacity[0.7]}], 
+      DiskBox[{0.6245380216637644, -0.24576309369944221}, 
+       0.017674226532102905], 
+      DiskBox[{0.7071067811865475, -0.7071067811865475}, 
+       0.017674226532102905], 
+      DiskBox[{0.6244926994581556, 0.2458909568443634}, 0.017674226532102905],
+       DiskBox[{0.7071067811865475, 0.7071067811865475}, 
+       0.017674226532102905], 
+      DiskBox[{-0.6248136450773634, 0.24585789803829922}, 
+       0.017674226532102905], 
+      DiskBox[{-0.7071067811865475, 0.7071067811865475}, 
+       0.017674226532102905], 
+      DiskBox[{-0.6242949070937508, -0.24590391465015868}, 
+       0.017674226532102905], 
+      DiskBox[{-0.7071067811865475, -0.7071067811865475}, 
+       0.017674226532102905], 
+      DiskBox[{0.2230006431996123, -0.1676626736062281}, 
+       0.017674226532102905], 
+      DiskBox[{-0.22300593933376614, -0.16794957966027957}, 
+       0.017674226532102905], 
+      DiskBox[{0.22267547907287472, 0.16848470017113984}, 
+       0.017674226532102905], 
+      DiskBox[{-0.22311665094694183, 0.1684297293716036}, 
+       0.017674226532102905]}},
+    FormatType->TraditionalForm,
+    FrameTicks->None], ",", 
+   GraphicsBox[{
+     {Hue[0.6, 0.7, 0.5], Opacity[0.7], {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{0.6333323667987605, -0.23180241844689872`}, {
+          0.7071067811865475, -0.7071067811865475}}]}}, InsetBox[
+        FormBox[
+         SubscriptBox["k", "4"],
+         TraditionalForm], {0.670219573992654, -0.4694545998167231}, 
+        ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{0.751300894242634, 0.2529554053558553}, {
+          0.6333323667987605, -0.23180241844689872`}}]}}, InsetBox[
+        RowBox[{"in", "(", "13", ")"}], {0.6923166305206973, 0.010576493454478295},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{0.751300894242634, 0.2529554053558553}, {
+          0.7071067811865475, 0.7071067811865475}}]}}, InsetBox[
+        FormBox[
+         SubscriptBox["k", "3"],
+         TraditionalForm], {0.7292038377145907, 0.4800310932712014}, 
+        ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{-0.6764322342696001, 
+          0.2116587299282977}, {-0.7071067811865475, 0.7071067811865475}}]}}, 
+       InsetBox[
+        FormBox[
+         SubscriptBox["k", "2"],
+         TraditionalForm], {-0.6917695077280738, 0.4593827555574226}, 
+        ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{-0.6764322342696001, 
+          0.2116587299282977}, {-0.34316672498545076`, \
+-0.06182031962423113}}]}}, InsetBox[
+        RowBox[{"in", "(", "9", ")"}], {-0.5097994796275254, 0.07491920515203329},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{-0.6957734963026259, -0.2379126392698404}, \
+{-0.6764322342696001, 0.2116587299282977}}]}}, InsetBox[
+        RowBox[{"in", "(", "12", ")"}], {-0.686102865286113, -0.013126954670771351},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{-0.6957734963026259, -0.2379126392698404}, \
+{-0.7071067811865475, -0.7071067811865475}}]}}, InsetBox[
+        FormBox[
+         SubscriptBox["k", "1"],
+         TraditionalForm], {-0.7014401387445867, -0.47250971022819394}, 
+        ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{-0.6957734963026259, -0.2379126392698404}, \
+{-0.34316672498545076`, -0.06182031962423113}}]}}, InsetBox[
+        RowBox[{"in", "(", "8", ")"}], {-0.5194701106440383, -0.14986647944703577},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{0.17872590624915835`, -0.103176131911117}, {
+          0.6333323667987605, -0.23180241844689872`}}]}}, InsetBox[
+        RowBox[{"in", "(", "14", ")"}], {0.40602913652395944, -0.16748927517900786},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{
+          0.17872590624915835`, -0.103176131911117}, {-0.34316672498545076`, \
+-0.06182031962423113}}]}}, InsetBox[
+        RowBox[{"in", "(", "11", ")"}], {-0.0822204093681462, -0.08249822576767407},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{-0.1010787125442404, -0.23687115339813256`}, {
+          0.17872590624915835`, -0.103176131911117}}]}}, InsetBox[
+        RowBox[{"in", "(", "10", ")"}], {0.03882359685245897, -0.17002364265462477},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{-0.1010787125442404, -0.23687115339813256`}, \
+{-0.34316672498545076`, -0.06182031962423113}}]}}, InsetBox[
+        RowBox[{"in", "(", "9", ")"}], {-0.22212271876484557, -0.14934573651118185},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{0.4823152528894304, 0.13718434110341107`}, {
+          0.751300894242634, 0.2529554053558553}}]}}, InsetBox[
+        RowBox[{"in", "(", "7", ")"}], {0.6168080735660322, 0.1950698732296332},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}, {
+       {RGBColor[0, 0, 1], 
+        {RGBColor[0, 0, 1], Thickness[Large], Arrowheads[
+          Rational[1, 18]], 
+         ArrowBox[{{0.4823152528894304, 0.13718434110341107`}, {
+          0.17872590624915835`, -0.103176131911117}}]}}, InsetBox[
+        RowBox[{"in", "(", "10", ")"}], {0.33052057956929437, 0.017004104596147034},
+         ImageScaled[{0.5, 0.5}],
+        BaseStyle->"Graphics"]}}, 
+     {Hue[0.6, 0.2, 0.8], EdgeForm[{GrayLevel[0], Opacity[0.7]}], 
+      DiskBox[{0.6333323667987605, -0.23180241844689872}, 
+       0.018060020364680296], 
+      DiskBox[{0.7071067811865475, -0.7071067811865475}, 
+       0.018060020364680296], 
+      DiskBox[{0.751300894242634, 0.2529554053558553}, 0.018060020364680296], 
+      DiskBox[{0.7071067811865475, 0.7071067811865475}, 0.018060020364680296],
+       DiskBox[{-0.6764322342696001, 0.2116587299282977}, 
+       0.018060020364680296], 
+      DiskBox[{-0.7071067811865475, 0.7071067811865475}, 
+       0.018060020364680296], 
+      DiskBox[{-0.6957734963026259, -0.2379126392698404}, 
+       0.018060020364680296], 
+      DiskBox[{-0.7071067811865475, -0.7071067811865475}, 
+       0.018060020364680296], 
+      DiskBox[{0.17872590624915835, -0.103176131911117}, 
+       0.018060020364680296], 
+      DiskBox[{-0.34316672498545076, -0.06182031962423113}, 
+       0.018060020364680296], 
+      DiskBox[{-0.1010787125442404, -0.23687115339813256}, 
+       0.018060020364680296], 
+      DiskBox[{0.4823152528894304, 0.13718434110341107}, 
+       0.018060020364680296]}},
+    FormatType->TraditionalForm,
+    FrameTicks->None]}], "}"}]], "Output",
+ CellChangeTimes->{{3.906275261290574*^9, 3.9062752802839823`*^9}},
+ CellLabel->
+  "Out[328]=",ExpressionUUID->"4d71b983-fa9b-44da-ab9b-a2aa979c4c70"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"SewTest1", "[", "bbbbb", "]"}], "[", 
+   RowBox[{"[", "1", "]"}], "]"}], "===", 
+  RowBox[{
+   RowBox[{"SewTest1", "[", "bbbbb", "]"}], "[", 
+   RowBox[{"[", "2", "]"}], "]"}]}]], "Input",
+ CellLabel->
+  "In[329]:=",ExpressionUUID->"72645821-33d3-4c7a-bcf0-323fb714cac8"],
+
+Cell[BoxData["True"], "Output",
+ CellChangeTimes->{3.906275292440604*^9},
+ CellLabel->
+  "Out[329]=",ExpressionUUID->"ebfdacff-f7de-4b66-adeb-742f70c7e9d0"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"SewTest2", "[", "bbbbb", "]"}]], "Input",
+ CellLabel->
+  "In[330]:=",ExpressionUUID->"44930faa-849d-4877-a091-a432dfd336dd"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"0", ",", "1", ",", "3", ",", "6", ",", "7"}], "}"}]], "Output",
+ CellChangeTimes->{3.9062752998641357`*^9},
+ CellLabel->
+  "Out[330]=",ExpressionUUID->"243df903-0dac-4d9d-9d6f-c649db8cc52c"]
+}, Open  ]]
+},
+WindowSize->{573., 568.8},
+WindowMargins->{{
+  Automatic, 197.4000000000001}, {-31.199999999999932`, Automatic}},
+FrontEndVersion->"13.1 for Microsoft Windows (64-bit) (2022\:5e748\:670822\
+\:65e5)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"d491e1e6-6751-4f18-b650-6ffcf3cfbd64"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 2449, 73, 197, "Input",ExpressionUUID->"43c2eb85-ef9d-415b-a8a1-0369557fa97d"],
+Cell[3032, 97, 3465, 79, 189, "Output",ExpressionUUID->"5bf1d7f4-e15c-45a8-adb6-49eb2b198308"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6534, 181, 496, 14, 43, "Input",ExpressionUUID->"cc8e6b66-18b7-4560-ab24-9455611c3e6b"],
+Cell[7033, 197, 6832, 147, 376, "Output",ExpressionUUID->"27b2eef6-af24-44cd-a2ce-67ec92e98f59"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[13902, 349, 910, 27, 81, "Input",ExpressionUUID->"c20239a1-5568-4df9-a582-f4853108279c"],
+Cell[14815, 378, 6858, 147, 376, "Output",ExpressionUUID->"d465a4c6-384c-4747-beef-6441127b02bd"]
+}, Open  ]],
+Cell[21688, 528, 236, 4, 35, "Text",ExpressionUUID->"07fd0d3a-2ab9-410c-9f4b-4c03966bb69c"],
+Cell[CellGroupData[{
+Cell[21949, 536, 249, 7, 28, "Input",ExpressionUUID->"c85c2db3-4774-4384-bb47-592b78dcab57"],
+Cell[22201, 545, 2497, 82, 116, "Output",ExpressionUUID->"18b2ff7d-e510-4585-8145-0875983f0794"]
+}, Open  ]],
+Cell[24713, 630, 184, 3, 35, "Text",ExpressionUUID->"ef4b90e3-8c58-43b2-a3e5-01ad3c03805c"],
+Cell[CellGroupData[{
+Cell[24922, 637, 195, 5, 28, "Input",ExpressionUUID->"a45f06cd-7be0-4722-84b0-eaefc4f8ce60"],
+Cell[25120, 644, 2363, 82, 76, "Output",ExpressionUUID->"78180c60-1095-4055-b59b-2e855db992f1"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[27520, 731, 415, 11, 43, "Input",ExpressionUUID->"c948ff22-ff0d-4b2a-8c08-827659aef5bf"],
+Cell[27938, 744, 70403, 1522, 1029, "Output",ExpressionUUID->"4d71b983-fa9b-44da-ab9b-a2aa979c4c70"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[98378, 2271, 318, 9, 28, "Input",ExpressionUUID->"72645821-33d3-4c7a-bcf0-323fb714cac8"],
+Cell[98699, 2282, 156, 3, 32, "Output",ExpressionUUID->"ebfdacff-f7de-4b66-adeb-742f70c7e9d0"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[98892, 2290, 148, 3, 28, "Input",ExpressionUUID->"44930faa-849d-4877-a091-a432dfd336dd"],
+Cell[99043, 2295, 230, 5, 55, "Output",ExpressionUUID->"243df903-0dac-4d9d-9d6f-c649db8cc52c"]
+}, Open  ]]
+}
+]
+*)
+
