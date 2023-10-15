@@ -18,6 +18,17 @@ d/.{ini->c}
 ]
 
 
+Cut2[a__,ini__]:=
+Module[ {d=a,
+n=a//Flatten//ToString//StringCount[#,ini//ToString]&,
+nnnn=a//Flatten//ToString//StringCount[#,"l["]&,b,c
+},
+c=If[OddQ[n],l[nnnn+1],ini];
+
+d/.{ini->c}
+]
+
+
 Cut1[a__]:=
 Module[{b=a},
 For[i = 0, i < 30, i++, b=Cut[b,in[i]]];
@@ -38,7 +49,7 @@ d/.{ini->c}
 
 Cut3[a__]:=
 Module[{b=a},
-For[i = 0, i < 30, i++, b=Cut2[b,in[i]]];
+For[i = 0, i < 30, i++, b=Cut[b,in[i]]];
 b
 ]
 
@@ -165,7 +176,7 @@ c
 
 SelectSew3[a__]:=
 Module[{b=a,c,d},
-c=b//SelectSew1;
+c=b//Cut4;
 d=c//UncutOff;
 d
 ]
@@ -182,6 +193,83 @@ e
 ]
 
 
-SewAll1[a__]:=
-Module[{b=a,c=a//Length},
+SelectSew5[a__]:=
+Module[{b=a,c,d=(a//SelectSew3)//Length,e},
+c=b//SelectSew3;
+e=c//SewSew;
+
+
+e
 ]
+
+
+CutlegSubstituion[a__]:=
+Module[{b=a,c},
+c=b//SelectSew5;
+c
+]
+
+
+
+sewGraphs1[a__,b__] :=
+    Module[ {na = Length[getConnectingEdges[a]],
+    bConEdges = getConnectingEdges[b]
+    },
+        vertexFormGraph[
+        Join[a, b/.
+        Map[
+        #->in[#[[1]]+na]&,
+        bConEdges]
+        ]
+        ]
+    ]
+
+
+
+
+
+SewGraphs2[a__,b__]:=
+Module[{c=a,d=b,e,f},
+e=Join[c,d];
+f=vertexFormGraph[e];
+f
+]
+
+
+SewAll1[a__]:=
+Module[{b=a,c=a//Length,e,f},
+e=Join[Table[b[[i]],{i,1,c}]];
+f=vertexFormGraph[e//Flatten];
+f
+]
+
+
+SewAll2[a__]:=
+Module[{b=a,c},
+c=Map[SewAll1,b];
+c
+]
+
+
+SewAll3[a__]:=
+Module[{b=a,c,d},
+c=Map[SewAll1,b];
+d=Map[doOrderedPlot[#,k/@Range[4]]&,c];
+d
+]
+
+
+getAllCutsgraphs[a__]:=
+Module[{b=a},
+c=b//Cut0;
+d=c//SelectSew5;
+e=d//SewAll3;
+e]
+
+
+getAllCutsgraphs[a__]:=
+Module[{b=a},
+c=b//Cut0;
+d=c//SelectSew5;
+e=d//SewAll2;
+e]
