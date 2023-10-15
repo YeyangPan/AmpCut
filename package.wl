@@ -260,15 +260,15 @@ d
 
 
 getAllCutsgraphs[a__]:=
-Module[{b=a},
+Module[{b=a,c,d,e},
 c=b//Cut0;
 d=c//SelectSew5;
 e=d//SewAll3;
 e]
 
 
-getAllCutsgraphs[a__]:=
-Module[{b=a},
+getAllCuts[a__]:=
+Module[{b=a,c,d,e},
 c=b//Cut0;
 d=c//SelectSew5;
 e=d//SewAll2;
